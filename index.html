@@ -4,45 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="wallpaper-area">
-            <img src="wallpaper.jpg" alt="wallpaper">
+
+<div class="container">
+
+    <div class="left-panel">
+
+        <div class="logo">
+            <h1>ODIN</h1>
         </div>
-        <div class="content-area">
-            <p>This is not a real online service! You know you need something <br> like this in your life to help you realize your deepest dreams. <br> Sign up now to get started. <br><br> You <em>know</em> you want to.</p>
-            <div class="form-body">
-                <h3>Let's do this!</h3>
-                <form action="" method="">
-                    <fieldset>
-                        <label for="firstname">FIRST NAME</label>
-                        <input type="text">
 
-                        <label for="lasttname">LAST NAME</label>
-                        <input type="text">
-                    </fieldset>
-                    <fieldset>
-                        <label for="email">EMAIL</label>
-                        <input type="email">
+        <p class="credit">
+            Photo by Someone on Unsplash
+        </p>
 
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="number">
-                    </fieldset>
-                    <fieldset>
-                        <label for="password">PASSWORD</label>
-                        <input type="password">
-
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password">
-                    </fieldset>
-                    <button>Create Account</button>
-                    <p>Aready have an account? <a href="#">Log in</a></p>
-                </form>
-            </div>
-        </div>
     </div>
+
+    <div class="right-panel">
+
+        <div class="intro">
+
+            <p>
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up now to get started.
+            </p>
+
+            <p>
+                <strong>You <em>know</em> you want to.</strong>
+            </p>
+
+        </div>
+
+        <div class="form-card">
+
+            <h2>Let's do this!</h2>
+
+            <form id="signupForm">
+
+                <div class="row">
+
+                    <div class="input-group">
+                        <label for="firstName">FIRST NAME</label>
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label for="lastName">LAST NAME</label>
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+                        <label for="email">EMAIL</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+                        <label for="password">PASSWORD</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            required
+                        >
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="bottom">
+            <button type="submit">
+                Create Account
+            </button>
+            <p>
+                Already have an account?
+                <a href="#">Log in</a>
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
